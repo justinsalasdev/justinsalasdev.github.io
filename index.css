@@ -8,6 +8,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  padding: 1rem;
 }
 
 .heading {
@@ -16,14 +17,23 @@ body {
 }
 
 .section__heading {
-  background: ;
   text-transform: uppercase;
   font-size: 1.5rem;
+  margin-block: 1rem;
+}
+
+.section__item {
+  list-style: none;
 }
 
 .section__link {
+  display: inline-block;
   font-size: 1.5rem;
   padding: 0.5rem;
   color: var(--cyan);
   text-decoration: none;
+}
+
+.section__link:hover {
+  color: var(--gray);
 }
