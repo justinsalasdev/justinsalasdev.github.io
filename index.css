@@ -6,8 +6,23 @@
   --white: #eeeeee;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Prompt", sans-serif;
+  min-height: 100vh;
+  width: 100%;
   padding: 1rem;
 }
 
