@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,700;1,900&display=swap");
 :root {
   --black: #222831;
   --gray: #393e46;
@@ -7,12 +7,12 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Prompt", sans-serif;
   padding: 1rem;
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: var(--black);
 }
 
@@ -22,14 +22,37 @@ body {
   margin-block: 1rem;
 }
 
-.section__item {
+.section__list {
+  display: flex;
+  flex-flow: row wrap;
   list-style: none;
+}
+
+.section__item {
+  min-width: 20rem;
+  /* border: 1px solid black; */
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  display: grid;
+  margin: 0.5rem;
+}
+
+.section__item > .title {
+  background: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.section__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
 .section__link {
   display: inline-block;
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  font-size: 1rem;
+  /* padding: 0.5rem; */
   color: var(--cyan);
   text-decoration: none;
 }
