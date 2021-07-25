@@ -58,10 +58,11 @@ body {
 }
 
 .section__item {
-  min-width: 20rem;
+  width: 20rem;
   /* border: 1px solid black; */
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   display: grid;
+  grid-template-rows: auto 15rem auto;
   margin: 0.5rem;
 }
 
@@ -70,6 +71,13 @@ body {
   color: var(--white);
   padding: 0.5rem;
   font-size: 1.2rem;
+}
+
+.section__item > .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* object-position: left; */
 }
 
 .section__links {
